@@ -12,7 +12,7 @@ header {
   flex-wrap: nowrap;
   justify-content: center;
   width: 100%;
-  background-color:#fa8072;
+  background-color: #fa8072;
 }
 nav {
   min-width: 960px;
@@ -29,12 +29,12 @@ nav > item {
   justify-content: center;
   align-items: center;
   font-weight: bold;
-  color:#FFFFFF;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #000000;
   font-family: Arial, Helvetica, sans-serif;
 }
 nav item:first-child {
-  background: url("images/salmon.png")
-    center no-repeat;
+  background: url("images/salmon.png") center no-repeat;
   background-size: contain;
   flex-shrink: 0;
   width: 200px;
@@ -54,30 +54,37 @@ main > * {
   flex-shrink: 0;
   flex-grow: 0;
   margin-top: 30px;
-  justify-content:center;
+  justify-content: center;
   align-self: center;
 }
 
 main section:first-child {
   height: 300px;
   width: 960px;
-  background: url("images/salmon.png")
-    center no-repeat;
+  background: url("images/salmon.png") center no-repeat;
   background-size: contain;
 }
-main section:first-child h1{
-color: #fa8072;
-font-size:4em;
-align-self: center;
+main section:first-child h1 {
+  color: #fa8072;
+  font-size: 4em;
+  align-self: center;
 }
 
 main section:nth-child(2) {
-  min-height:max-content;
+  min-height: max-content;
   width: 960px;
-  background-color:#fa8072;
-  
+  background-color: #fa8072;
 }
-
+main section:nth-child(2) table {
+  border: 1px #fa8072;
+  background-color: #ffd2cd;
+  color: #000000;
+  align-self: center;
+}
+main section:nth-child(2) table tr:nth-child(even) {
+  background-color: #ffffff;
+  color: #582c26;
+}
 main section:nth-child(3) {
   width: 480px;
   height: 400px;
@@ -92,7 +99,8 @@ main section:nth-child(4) {
   height: 400px;
   justify-content: space-between;
 }
-main section:nth-child(4) > article, item {
+main section:nth-child(4) > article,
+item {
   flex-grow: 0;
   display: flex;
   padding-left: 30px;
@@ -101,29 +109,30 @@ main section:nth-child(4) article:first-child {
   flex-wrap: wrap;
   font-style: italic;
   line-height: 1.5;
-  overflow-y:scroll;
+  overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
   overscroll-behavior: contain;
 }
 main section:nth-child(4) > article:first-child h1 {
-  font-weight:normal;
-  font-style:normal;
+  font-weight: normal;
+  font-style: normal;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 2;
 }
 
 main section:nth-child(4) > item:last-child .call-to-order {
-  background-color:#fa8072;
+  background-color: #fa8072;
   height: min-content;
   padding: 0.5em 1.5em;
   color: #fff;
+  text-shadow: 2px 2px 2px #000000;
   transition: background-color 350ms ease-in-out;
 }
 
 main section:nth-child(4) > item:last-child .call-to-order:hover {
   background-color: #fff;
-  color:#fa8072;
+  color: #fa8072;
 }
 
 footer {
@@ -133,5 +142,5 @@ footer {
   flex-grow: 4;
   flex-wrap: nowrap;
   justify-content: center;
-  background-color:salmon;
+  background-color: salmon;
 }
